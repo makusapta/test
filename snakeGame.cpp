@@ -14,7 +14,7 @@ enum eDirection
     RIGHT,
     UP,
     DOWN
-}; // idk
+};              // idk
 eDirection dir; // idk
 
 void Setup()
@@ -47,8 +47,8 @@ void Draw()
             else if (i == fruitY && j == fruitX)
                 cout << "F";
 
-            else{                                           //drawing of snake tail/body
-                bool print = false;                         //
+            else{                                                       //drawing of snake tail/body
+             mbool print = false;                         //
                 for(int k = 0; k < nTail; k++){             //
                     if(tailX[k] == j && tailY[k] == i){     //
                         cout<<"o";                          //
