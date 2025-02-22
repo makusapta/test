@@ -6,3 +6,4 @@ all the basic things to commit,
 (14/02/2025): Today we are making presentation for AI and the ethics of digital world, who owns us
 (17/02/2025): Past 2 says i was not able to commit anything new , I am in my home now , today as well plus I dont have my laptop with me 
 (21/02/2025): Today i learned some maths, some topics related to polynomials and Theory of Equations and still trying to learn, 
+(22/02/23): I haven't done much progress today , , which is really bad 
