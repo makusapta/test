@@ -9,3 +9,4 @@ all the basic things to commit,
 (22/02/23): I haven't done much progress today , , which is really bad 
 (24/02/2025): Today i tried to improving the model and added two more methods , using ai
 (01/03/2025): I am home today , 
+(03/03/2025): Today ,  with math 
