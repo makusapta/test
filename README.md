@@ -10,4 +10,4 @@ all the basic things to commit,
 (24/02/2025): Today i tried to improving the model and added two more methods , using ai
 (01/03/2025): I am home today , 
 (03/03/2025): Today ,  with math 
-(04/03/2025): Today , with math
+(04/03/2025): Today ,  with math
