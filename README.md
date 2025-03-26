@@ -16,4 +16,7 @@ all the basic things to commit,
 (07/03/2025): Today, my work was assigned but i haven't started yet, i don't have my laptop with me,
 <br>
 (20/03/2025):Taday, DALEX explanation over all classifiers 
+<br>
 (23/03/2025):Today, Discrete Math 
+<br>
+(26/03/2025):I am sorry for the previous 2 days, 
