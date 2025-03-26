@@ -19,4 +19,4 @@ all the basic things to commit,
 <br>
 (23/03/2025):Today, Discrete Math 
 <br>
-(26/03/2025):I am sorry for the previous 2 days, 
+(26/03/2025):I am sorry for the previous 2 days, from today the i will be regular
