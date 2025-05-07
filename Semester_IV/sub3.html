@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Analysis of Algorithms - Syllabus Tracker</title>
+
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styling */
+        main {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .topic-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .topic-box {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic-box:hover {
+            transform: translateY(-5px);
+            background-color: #005bb5;
+        }
+
+        .subtopics, .subsubtopics {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .clickable {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .clickable:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+    </style>
+
+    <script>
+        // JavaScript for toggling visibility of subtopics and sub-subtopics
+        function toggleVisibility(elementId) {
+            const element = document.getElementById(elementId);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Design and Analysis of Algorithms - Syllabus Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="sub1.html">OS Syllabus</a></li>
+                <li><a href="sub2.html">DMath</a></li>
+                <li><a href="sub3.html">Algo</a></li>
+                <li><a href="sub4.html">DBMS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>4CMSMJC1: Design and Analysis of Algorithms</h2>
+        <p><strong>Credit:</strong> 3 | <strong>Marks:</strong> 50</p>
+
+        <h3>Topics</h3>
+        <div class="topic-container">
+            <div class="topic-box" onclick="toggleVisibility('foundationsSubtopics')">
+                <span class="clickable">Foundations of Algorithms</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('recurrencesSubtopics')">
+                <span class="clickable">Recurrences</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('designTechniquesSubtopics')">
+                <span class="clickable">Algorithm Design Techniques</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('graphAlgorithmsSubtopics')">
+                <span class="clickable">Graph Representations and Algorithms</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('networkFlowSubtopics')">
+                <span class="clickable">Network Flow Algorithms</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('stringMatchingSubtopics')">
+                <span class="clickable">String Matching Algorithms</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('randomizedAlgorithmsSubtopics')">
+                <span class="clickable">Randomized Algorithms</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('complexitySubtopics')">
+                <span class="clickable">Computational Complexity</span>
+            </div>
+        </div>
+
+        <!-- Subtopics -->
+        <div id="foundationsSubtopics" class="subtopics">
+            <ul>
+                <li>Asymptotic Notations: Big-Oh, Big-Theta, Big-Omega, Little-Oh, Little-Omega</li>
+                <li>Proof of Correctness</li>
+                <li>Case Studies of Sorting and Searching Techniques</li>
+                <li>Amortized Analysis: Aggregate, Accounting, Potential Methods</li>
+            </ul>
+        </div>
+
+        <div id="recurrencesSubtopics" class="subtopics">
+            <ul>
+                <li>Recurrence Relations, Generating Functions</li>
+                <li>Linear Recurrence Relations with Constant Coefficients</li>
+                <li>Recursion Tree, Master Method</li>
+            </ul>
+        </div>
+
+        <div id="designTechniquesSubtopics" class="subtopics">
+            <ul>
+                <li>Divide and Conquer (Strassen’s Matrix Multiplication)</li>
+                <li>Dynamic Programming (Matrix Chain Multiplication, 0-1 Knapsack Problem)</li>
+                <li>Greedy Algorithm (Fractional Knapsack Problem)</li>
+                <li>Backtracking (N-Queen’s Problem)</li>
+                <li>Branch-and-Bound (Job Scheduling Problem)</li>
+            </ul>
+        </div>
+
+        <div id="graphAlgorithmsSubtopics" class="subtopics">
+            <ul>
+                <li>Graph Representations: Adjacency Matrix, List</li>
+                <li>Graph Traversal: BFS, DFS</li>
+                <li>Minimum Spanning Tree: Prim’s and Kruskal’s Algorithms</li>
+                <li>Shortest Path Algorithms: Bellman-Ford, Dijkstra, Floyd-Warshall</li>
+            </ul>
+        </div>
+
+        <div id="networkFlowSubtopics" class="subtopics">
+            <ul>
+                <li>Flow Network and Cut</li>
+                <li>Ford-Fulkerson Method</li>
+            </ul>
+        </div>
+
+        <div id="stringMatchingSubtopics" class="subtopics">
+            <ul>
+                <li>Naive Algorithm</li>
+                <li>Knuth-Morris-Pratt Algorithm</li>
+            </ul>
+        </div>
+
+        <div id="randomizedAlgorithmsSubtopics" class="subtopics">
+            <ul>
+                <li>Randomized Quick Sort</li>
+            </ul>
+        </div>
+
+        <div id="complexitySubtopics" class="subtopics">
+            <ul>
+                <li>P, NP, NP-Hard, NP-Complete Classes</li>
+                <li>Satisfiability Problem, Reducibility</li>
+            </ul>
+        </div>
+
+        <h3>Practical Syllabus</h3>
+        <ul>
+            <li>Implementing Divide and Conquer, Dynamic Programming, Greedy, Backtracking, Branch-and-Bound</li>
+            <li>Graph Algorithms Implementation: BFS, DFS, Prim's, Kruskal’s, Bellman-Ford, Dijkstra’s, Floyd-Warshall</li>
+            <li>String Matching Algorithms: Knuth-Morris-Pratt</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Syllabus Tracker | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

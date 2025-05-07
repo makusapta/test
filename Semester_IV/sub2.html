@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Mathematics - Syllabus Tracker</title>
+
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styling */
+        main {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .topic-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .topic-box {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic-box:hover {
+            transform: translateY(-5px);
+            background-color: #005bb5;
+        }
+
+        .subtopics, .subsubtopics {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .clickable {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .clickable:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+    </style>
+
+    <script>
+        // JavaScript for toggling visibility of subtopics and sub-subtopics
+        function toggleVisibility(elementId) {
+            const element = document.getElementById(elementId);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Computational Mathematics - Syllabus Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="sub1.html">OS Syllabus</a></li>
+                <li><a href="sub2.html">DMath</a></li>
+                <li><a href="sub3.html">Algo</a></li>
+                <li><a href="sub4.html">DBMS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>4CMSMJC4: Computational Mathematics</h2>
+        <p><strong>Credit:</strong> 3 | <strong>Marks:</strong> 50</p>
+
+        <h3>Topics</h3>
+        <div class="topic-container">
+            <div class="topic-box" onclick="toggleVisibility('setTheorySubtopics')">
+                <span class="clickable">Introduction to Set Theory</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('groupTheorySubtopics')">
+                <span class="clickable">Group Theory</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('countingTheorySubtopics')">
+                <span class="clickable">Counting Theory</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('probabilitySubtopics')">
+                <span class="clickable">Introduction to Probability and Statistics</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('graphTheorySubtopics')">
+                <span class="clickable">Introduction to Graph Theory</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('walkPathSubtopics')">
+                <span class="clickable">Walk, Path and Circuit</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('cutSetSubtopics')">
+                <span class="clickable">Cut Set and Cut Vertices</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('planarGraphSubtopics')">
+                <span class="clickable">Planar Graph</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('graphRepresentationSubtopics')">
+                <span class="clickable">Computer Representation of a Graph</span>
+            </div>
+        </div>
+
+        <!-- Subtopics -->
+        <div id="setTheorySubtopics" class="subtopics">
+            <ul>
+                <li>Sets - finite and infinite sets, uncountable infinite sets, set algebra</li>
+                <li>Functions, relations, equivalence relations, and partitions</li>
+                <li>Composition of relations, closure of relations, Warshall’s algorithm</li>
+                <li>Partial Ordering Relations, Poset, Hasse Diagram, Lattice</li>
+                <li>Introduction to Boolean algebra</li>
+            </ul>
+        </div>
+
+        <div id="groupTheorySubtopics" class="subtopics">
+            <ul>
+                <li>Definition and properties of group, groupoid, semigroup, monoid</li>
+                <li>Subgroup, cyclic group, cosets and related theorems</li>
+                <li>Concept of permutation group, Ring, and Field</li>
+            </ul>
+        </div>
+
+        <div id="countingTheorySubtopics" class="subtopics">
+            <ul>
+                <li>Pigeon Hole Principle (generalized statement, proof, and standard applications)</li>
+                <li>Principle of Inclusion and Exclusion (generalized statement, proof, and applications)</li>
+                <li>Permutations and Combinations (with and without repetition)</li>
+            </ul>
+        </div>
+
+        <div id="probabilitySubtopics" class="subtopics">
+            <ul>
+                <li>Sample space, events, probability, simple problems</li>
+                <li>Theorems on Total Probability, Conditional Probability, Bayes’ Theorem</li>
+                <li>Random variable, Expectation, Variance, Standard Deviation, Bernoulli Trials</li>
+                <li>Probability distributions – Binomial Distribution, Poisson Distribution, Normal Distribution</li>
+            </ul>
+        </div>
+
+        <div id="graphTheorySubtopics" class="subtopics">
+            <ul>
+                <li>Types of graphs: simple, multi, directed, weighted, bipartite, complete bipartite</li>
+                <li>Application of graphs, finite and infinite graphs</li>
+                <li>Operations on graphs: Union, Intersection, Ring sum, Decomposition, Deletion of edge/vertex</li>
+            </ul>
+        </div>
+
+        <div id="walkPathSubtopics" class="subtopics">
+            <ul>
+                <li>Walk, path, circuit and their differences</li>
+                <li>Euler Graph, Hamiltonian path and circuit</li>
+                <li>Connected and disconnected graph, components</li>
+            </ul>
+        </div>
+
+        <div id="cutSetSubtopics" class="subtopics">
+            <ul>
+                <li>Cut set and its properties</li>
+                <li>All Cut-sets in a graph, Fundamental circuit and Cut set</li>
+                <li>Connectivity (Edge and Vertex), Separability</li>
+            </ul>
+        </div>
+
+        <div id="planarGraphSubtopics" class="subtopics">
+            <ul>
+                <li>Euler formula, Kuratowski’s theorem, Geometric Dual</li>
+            </ul>
+        </div>
+
+        <div id="graphRepresentationSubtopics" class="subtopics">
+            <ul>
+                <li>Adjacency Matrix, Incidence Matrix, Circuit Matrix</li>
+            </ul>
+        </div>
+
+        <h3>Computational Mathematics Tutorial</h3>
+        <ul>
+            <li>Real-time problems on Sets, Functions, Relations, Counting theory, Probability</li>
+            <li>Introduction to R for performing set operations and analyzing combinatorial problems</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Syllabus Tracker | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

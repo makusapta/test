@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Management Systems - Syllabus Tracker</title>
+
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styling */
+        main {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .topic-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .topic-box {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic-box:hover {
+            transform: translateY(-5px);
+            background-color: #005bb5;
+        }
+
+        .subtopics, .subsubtopics {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .clickable {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .clickable:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+    </style>
+
+    <script>
+        // JavaScript for toggling visibility of subtopics and sub-subtopics
+        function toggleVisibility(elementId) {
+            const element = document.getElementById(elementId);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Database Management Systems - Syllabus Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="sub1.html">OS Syllabus</a></li>
+                <li><a href="sub2.html">DMath</a></li>
+                <li><a href="sub3.html">Algo</a></li>
+                <li><a href="sub4.html">DBMS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>4CMSMJC3: Database Management Systems</h2>
+        <p><strong>Credit:</strong> 3 | <strong>Marks:</strong> 50</p>
+
+        <h3>Topics</h3>
+        <div class="topic-container">
+            <div class="topic-box" onclick="toggleVisibility('introSubtopics')">
+                <span class="clickable">Introduction</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('erModelSubtopics')">
+                <span class="clickable">ER Model</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('relationalModelSubtopics')">
+                <span class="clickable">Relational Model</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('integritySubtopics')">
+                <span class="clickable">Integrity Constraints</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('relationalDesignSubtopics')">
+                <span class="clickable">Relational Database Design</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('sqlSubtopics')">
+                <span class="clickable">SQL</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('transactionProcessingSubtopics')">
+                <span class="clickable">Transaction Processing</span>
+            </div>
+            <div class="topic-box" onclick="toggleVisibility('fileOrganizationSubtopics')">
+                <span class="clickable">Record Storage and File Organization</span>
+            </div>
+        </div>
+
+        <!-- Subtopics -->
+        <div id="introSubtopics" class="subtopics">
+            <ul>
+                <li>Drawbacks of Legacy System</li>
+                <li>Advantages of DBMS</li>
+                <li>Layered Architecture of Database</li>
+                <li>Data Independence</li>
+                <li>Data Models, Schemas, Instances</li>
+                <li>Database Languages and Users</li>
+                <li>DBA, Data Dictionary, Functional Components</li>
+            </ul>
+        </div>
+
+        <div id="erModelSubtopics" class="subtopics">
+            <ul>
+                <li>Entity, Attributes, Relationship</li>
+                <li>Structural Constraints, Keys</li>
+                <li>ER Diagram Examples</li>
+                <li>Weak Entity Set</li>
+                <li>Specialization, Generalization, Aggregation</li>
+            </ul>
+        </div>
+
+        <div id="relationalModelSubtopics" class="subtopics">
+            <ul>
+                <li>Basic Concepts of Relational Model</li>
+                <li>Relational Algebra</li>
+                <li>Tuple Relational Calculus</li>
+                <li>Domain Relational Calculus</li>
+            </ul>
+        </div>
+
+        <div id="integritySubtopics" class="subtopics">
+            <ul>
+                <li>Domain Constraints</li>
+                <li>Referential Integrity</li>
+                <li>Assertions, Triggers</li>
+            </ul>
+        </div>
+
+        <div id="relationalDesignSubtopics" class="subtopics">
+            <ul>
+                <li>Problems of Un-Normalized Database</li>
+                <li>Functional Dependencies, Derivation Rules</li>
+                <li>Decomposition to 1NF, 2NF, 3NF, BCNF</li>
+                <li>Lossless Join Decomposition</li>
+                <li>Dependency Preservation</li>
+            </ul>
+        </div>
+
+        <div id="sqlSubtopics" class="subtopics">
+            <ul>
+                <li>SQL Basics: DDL, DML Commands</li>
+                <li>Basic SQL Queries: Selection, Insertion, Deletion, Update</li>
+                <li>Order By Clause, Aggregate Function</li>
+                <li>Nested Subqueries, Correlated Subqueries</li>
+                <li>Views, Set Comparisons, Derived Relations</li>
+                <li>Grant and Revoke, Transaction in SQL</li>
+            </ul>
+        </div>
+
+        <div id="transactionProcessingSubtopics" class="subtopics">
+            <ul>
+                <li>ACID Properties</li>
+                <li>Transaction States, Concurrent Execution</li>
+                <li>Serializability, Recoverability</li>
+                <li>Test for Serializability</li>
+            </ul>
+        </div>
+
+        <div id="fileOrganizationSubtopics" class="subtopics">
+            <ul>
+                <li>Fixed and Variable Length Records</li>
+                <li>Disk Blocks, Spanned vs Un-Spanned Records</li>
+                <li>Primary File Organizations, Access Structures</li>
+                <li>Indexing: Dense, Sparse, Multilevel Indices</li>
+            </ul>
+        </div>
+
+        <h3>Practical Syllabus</h3>
+        <ul>
+            <li>Introduction to SQL: DDL, DML Commands</li>
+            <li>Introduction to PL/SQL</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Syllabus Tracker | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
